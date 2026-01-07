@@ -1,0 +1,11 @@
+[project]
+name = "alphax_mis"
+version = "0.1.0"
+description = "AlphaX MIS - next-gen MIS / BI format builder with dimension-aware mapping and import tools (Frappe v15/v16)"
+authors = [{name="IRSAA / AlphaX"}]
+requires-python = ">=3.10"
+dependencies = []
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

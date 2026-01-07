@@ -1,0 +1,41 @@
+{
+  "doctype": "DocType",
+  "name": "AX MIS Flag",
+  "module": "AlphaX MIS",
+  "autoname": "field:flag_code",
+  "track_changes": 1,
+  "fields": [
+    {
+      "fieldname": "flag_code",
+      "label": "Flag Code",
+      "fieldtype": "Data",
+      "reqd": 1,
+      "unique": 1
+    },
+    {
+      "fieldname": "flag_name",
+      "label": "Flag Name",
+      "fieldtype": "Data",
+      "reqd": 1
+    },
+    {
+      "fieldname": "accounts",
+      "label": "Accounts",
+      "fieldtype": "Table",
+      "options": "AX MIS Flag Account"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "AlphaX MIS Admin",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "AlphaX MIS User",
+      "read": 1
+    }
+  ]
+}

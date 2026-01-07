@@ -1,0 +1,41 @@
+{
+  "doctype": "DocType",
+  "name": "AX MIS Report Format",
+  "module": "AlphaX MIS",
+  "autoname": "field:format_code",
+  "track_changes": 1,
+  "fields": [
+    {
+      "fieldname": "format_code",
+      "label": "Format Code",
+      "fieldtype": "Data",
+      "reqd": 1,
+      "unique": 1
+    },
+    {
+      "fieldname": "format_name",
+      "label": "Format Name",
+      "fieldtype": "Data",
+      "reqd": 1
+    },
+    {
+      "fieldname": "lines",
+      "label": "Lines",
+      "fieldtype": "Table",
+      "options": "AX MIS Report Line"
+    }
+  ],
+  "permissions": [
+    {
+      "role": "AlphaX MIS Admin",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    },
+    {
+      "role": "AlphaX MIS User",
+      "read": 1
+    }
+  ]
+}

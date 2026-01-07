@@ -1,0 +1,21 @@
+{
+  "doctype": "DocType",
+  "name": "AX MIS Allowed Dimension",
+  "module": "AlphaX MIS",
+  "istable": 1,
+  "editable_grid": 1,
+  "fields": [
+    {
+      "fieldname": "dimension",
+      "label": "Accounting Dimension",
+      "fieldtype": "Link",
+      "options": "Accounting Dimension",
+      "reqd": 1
+    },
+    {
+      "fieldname": "note",
+      "label": "Note",
+      "fieldtype": "Data"
+    }
+  ]
+}

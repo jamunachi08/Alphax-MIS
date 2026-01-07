@@ -1,0 +1,29 @@
+{
+  "doctype": "DocType",
+  "name": "AX MIS Settings",
+  "module": "AlphaX MIS",
+  "is_single": 1,
+  "track_changes": 1,
+  "fields": [
+    {
+      "fieldname": "notes",
+      "label": "Notes",
+      "fieldtype": "Small Text",
+      "description": "No dimension names are hardcoded. Dimensions are selected from Accounting Dimension."
+    },
+    {
+      "fieldname": "allowed_dimensions",
+      "label": "Allowed Dimensions (Optional)",
+      "fieldtype": "Table",
+      "options": "AX MIS Allowed Dimension",
+      "description": "Leave empty to allow ALL Accounting Dimensions."
+    }
+  ],
+  "permissions": [
+    {
+      "role": "AlphaX MIS Admin",
+      "read": 1,
+      "write": 1
+    }
+  ]
+}

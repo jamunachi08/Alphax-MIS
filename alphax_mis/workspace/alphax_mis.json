@@ -1,0 +1,35 @@
+{
+  "doctype": "Workspace",
+  "title": "AlphaX MIS",
+  "module": "AlphaX MIS",
+  "label": "AlphaX MIS",
+  "icon": "chart",
+  "is_standard": 1,
+  "public": 1,
+  "shortcuts": [
+    {
+      "type": "DocType",
+      "label": "AX MIS Flag",
+      "link_to": "AX MIS Flag",
+      "color": "Blue"
+    },
+    {
+      "type": "DocType",
+      "label": "AX MIS Report Format",
+      "link_to": "AX MIS Report Format",
+      "color": "Blue"
+    },
+    {
+      "type": "Report",
+      "label": "AlphaX MIS Report",
+      "link_to": "AlphaX MIS Report",
+      "color": "Green"
+    },
+    {
+      "type": "DocType",
+      "label": "AlphaX MIS Import Wizard",
+      "link_to": "AlphaX MIS Import Wizard",
+      "color": "Orange"
+    }
+  ]
+}

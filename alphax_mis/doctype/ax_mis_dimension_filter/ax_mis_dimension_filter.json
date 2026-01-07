@@ -1,0 +1,29 @@
+{
+  "doctype": "DocType",
+  "name": "AX MIS Dimension Filter",
+  "module": "AlphaX MIS",
+  "istable": 1,
+  "editable_grid": 1,
+  "fields": [
+    {
+      "fieldname": "dimension",
+      "label": "Accounting Dimension",
+      "fieldtype": "Link",
+      "options": "Accounting Dimension",
+      "reqd": 1
+    },
+    {
+      "fieldname": "dimension_doctype",
+      "label": "Dimension Doctype",
+      "fieldtype": "Data",
+      "read_only": 1
+    },
+    {
+      "fieldname": "value",
+      "label": "Value",
+      "fieldtype": "Dynamic Link",
+      "options": "dimension_doctype",
+      "reqd": 1
+    }
+  ]
+}

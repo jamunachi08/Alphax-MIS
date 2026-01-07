@@ -1,0 +1,46 @@
+{
+  "doctype": "DocType",
+  "name": "AlphaX MIS Import Wizard",
+  "module": "AlphaX MIS",
+  "track_changes": 1,
+  "fields": [
+    {
+      "fieldname": "excel_file",
+      "label": "Excel File",
+      "fieldtype": "Attach"
+    },
+    {
+      "fieldname": "mapping_json",
+      "label": "Mapping (JSON)",
+      "fieldtype": "Code",
+      "options": "JSON"
+    },
+    {
+      "fieldname": "dry_run",
+      "label": "Dry Run",
+      "fieldtype": "Check",
+      "default": 1
+    },
+    {
+      "fieldname": "last_log_file",
+      "label": "Last Log File",
+      "fieldtype": "Attach",
+      "read_only": 1
+    },
+    {
+      "fieldname": "last_summary",
+      "label": "Last Summary",
+      "fieldtype": "Small Text",
+      "read_only": 1
+    }
+  ],
+  "permissions": [
+    {
+      "role": "AlphaX MIS Admin",
+      "read": 1,
+      "write": 1,
+      "create": 1,
+      "delete": 1
+    }
+  ]
+}

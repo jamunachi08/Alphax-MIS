@@ -1,0 +1,40 @@
+{
+  "doctype": "DocType",
+  "name": "AX MIS Flag Account",
+  "module": "AlphaX MIS",
+  "istable": 1,
+  "editable_grid": 1,
+  "fields": [
+    {
+      "fieldname": "account",
+      "label": "Account",
+      "fieldtype": "Link",
+      "options": "Account",
+      "reqd": 1
+    },
+    {
+      "fieldname": "include",
+      "label": "Include",
+      "fieldtype": "Check",
+      "default": 1
+    },
+    {
+      "fieldname": "weight",
+      "label": "Weight",
+      "fieldtype": "Float",
+      "default": 1
+    },
+    {
+      "fieldname": "dimension_scope",
+      "label": "Dimension Scope",
+      "fieldtype": "Select",
+      "options": "All\nOnly Selected\nExclude Selected"
+    },
+    {
+      "fieldname": "dimension_filters",
+      "label": "Dimension Filters",
+      "fieldtype": "Table",
+      "options": "AX MIS Dimension Filter"
+    }
+  ]
+}

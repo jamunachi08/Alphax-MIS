@@ -1,0 +1,9 @@
+{
+  "doctype": "Report",
+  "name": "AlphaX MIS Report",
+  "ref_doctype": "AX MIS Report Format",
+  "report_type": "Script Report",
+  "is_standard": "Yes",
+  "module": "AlphaX MIS",
+  "disabled": 0
+}

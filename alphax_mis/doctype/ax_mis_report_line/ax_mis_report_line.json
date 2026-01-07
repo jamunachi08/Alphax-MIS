@@ -1,0 +1,53 @@
+{
+  "doctype": "DocType",
+  "name": "AX MIS Report Line",
+  "module": "AlphaX MIS",
+  "istable": 1,
+  "editable_grid": 1,
+  "fields": [
+    {
+      "fieldname": "line_code",
+      "label": "Line Code",
+      "fieldtype": "Data",
+      "reqd": 1
+    },
+    {
+      "fieldname": "title",
+      "label": "Title",
+      "fieldtype": "Data",
+      "reqd": 1
+    },
+    {
+      "fieldname": "line_type",
+      "label": "Line Type",
+      "fieldtype": "Select",
+      "options": "Group\nFlag\nFormula",
+      "reqd": 1
+    },
+    {
+      "fieldname": "flag",
+      "label": "Flag",
+      "fieldtype": "Link",
+      "options": "AX MIS Flag",
+      "depends_on": "eval:doc.line_type=='Flag'"
+    },
+    {
+      "fieldname": "formula",
+      "label": "Formula",
+      "fieldtype": "Data",
+      "depends_on": "eval:doc.line_type=='Formula'"
+    },
+    {
+      "fieldname": "indent",
+      "label": "Indent",
+      "fieldtype": "Int",
+      "default": 0
+    },
+    {
+      "fieldname": "bold",
+      "label": "Bold",
+      "fieldtype": "Check",
+      "default": 0
+    }
+  ]
+}
